@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>About Me</title>
+<style>
+    .lists-item{
+        color: red;
+    }
+</style>
+</head>
+<body>
+<h1>About Me</h1>
+<ul>
+<li>Nickname: <span id="nickname"></span>
+<li>Favorites: <span id="favorites"></span>
+<li>Hometown: <span id="hometown"></span>
+</ul>
+
+
+<script defer>
+
+var body = document.body
+body.style.fontFamily = "Arial, sans-serif"
+
+
+
+
+
+
+var nickname = document.getElementById("nickname").innerHTML = 'Eddie'
+var favs = document.getElementById("favorites").innerHTML = 'Gym, Video Games, Driving, Mekiel, Osama, Clayton'
+var hometown = document.getElementById("hometown").innerHTML = 'Milford, Pa'
+
+
+lists = document.getElementsByTagName('li')
+
+for(var i = 0; i < lists.length; i++){
+    lists[i].className = 'lists-item'
+    console.log(lists)
+}
+
+var me = document.createElement('img')
+me.src = "./me.png"
+me.style.width = "200px"
+me.style.height = "300px"
+body.appendChild(me)
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
